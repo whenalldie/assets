@@ -1,0 +1,49 @@
+.csf-field-text input,
+.csf-field-textarea textarea,
+.csf-field-upload input,
+.idmuvi-core-metabox-common-fields input,
+.idmuvi-core-metabox-common-fields textarea,
+.meta-box-sortables select,
+.csf-field-select select,
+.csf-field-media .csf--placeholder input {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 5px 5px;
+    border-color: #d7d7ff;
+}
+.csf-field-media .button {
+    margin-left: 5px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+ul.nav-tab-wrapperdl,
+ul.nav-tab-wrapper {
+    display: flex !important;
+    overflow: auto;
+}
+ul.nav-tab-wrapperdl li,
+ul.nav-tab-wrapper li {
+    margin-bottom: 3px;
+    border-radius: 3px;
+    border: 1px solid #d7d7ff;
+}
+.csf-field-upload .button {
+    padding: 5px 15px;
+}
+#wp-admin-bar-imdb_adminbar a,
+#wpadminbar .quicklinks > ul > li#wp-admin-bar-imdb_adminbar > a:hover,
+#wp-admin-bar-scraper_adminbar a,
+#wpadminbar .quicklinks > ul > li#wp-admin-bar-scraper_adminbar > a:hover {
+    background: #e50a4a;
+    color: #fff;
+}
+@media only screen and (max-width: 768px) {
+    .csf-field-media .button {
+        margin-left: 5px;
+        padding: 2px;
+        width: 100px;
+        text-align: center;
+    }
+}
