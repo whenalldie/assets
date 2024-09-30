@@ -66,12 +66,6 @@ function(i) {
 window.onscroll = function() {
 	20 < document.body.scrollTop || 20 < document.documentElement.scrollTop ? $("#go-top").fadeTo("fast", .7) : $("#go-top").hide()
 };
-// 	hideBefore = function(t, e) {
-// 		var i = $(t).offset().top - 100;
-// 		$("html, body").animate({
-// 			scrollTop: i
-// 		}, 1e3), $(t + " .load-more .marker").val(0), $(t + " .item:nth-child(" + e + ")").nextAll(t + " .item").remove().fadeIn("slow"), $(t + " .load-more .btn-primary").text("Tampilkan Lainnya").removeClass("btn-primary").addClass("btn-success"), $(t + " .load-more .btn-default").addClass("hidden")
-// 	},
 	showMore = function() {
 		"auto" == $(".toggle-more").css("overflow") ? ($("#movie-detail").addClass("content-wrapper"), $(".toggle-more").css("overflow", "hidden").css("height", $(".content-wrapper img").height() + 10), $(".show-more").html('TAMPILKAN LEBIH BANYAK <b class="caret"></b>')) : ($("#movie-detail").removeClass("content-wrapper"), $(".toggle-more").css("overflow", "auto").css("height", "auto"), $(".show-more").html('TAMPILKAN LEBIH SEDIKIT <b class="caret" style="transform: rotate(180deg)"></b>'))
 	},
