@@ -430,7 +430,7 @@ $(document).ready(function() {
         $('.idmuvi-floatbanner-footer').hide();
     }
 });
-if(adblock.Player == true) {
+if(d21.adblockPlayer == true) {
     setTimeout(function () {
         const canary = document.querySelector('div#detectPlayer');
         const style = getComputedStyle(canary);
@@ -443,7 +443,7 @@ if(adblock.Player == true) {
         }
     }, 2000);
 }
-if(ad.Block == true) {
+if(d21.adblock == true) {
     setTimeout(function () {
         const canary = document.querySelector('div#detect');
         const style = getComputedStyle(canary);
@@ -471,16 +471,16 @@ function showToast(options) {
 }
 $(document).ready(function() {
     var modalContent = document.querySelector(".modal-content");
-    if (bookMark) {
-        var getPath = bookmarkPages.split('/');
+    if (d21.bookMark) {
+        var getPath = d21.bookmarkPages.split('/');
         var lastSegment = getPath.pop() || getPath.pop();
         const newPath = "/" + lastSegment + "/";
     	const bookmarks = {
-    		maxWidget: bookmarkLimit,
-    		maxAll: bookmarkLimit,
-    		emptyText: bookMarkEmpty,
-    		moreText: viewAllBookmark,
-    		currentText: onBookmarkPage,
+    		maxWidget: d21.bookmarkLimit,
+    		maxAll: d21.bookmarkLimit,
+    		emptyText: d21.bookMarkEmpty,
+    		moreText: d21.viewAllBookmark,
+    		currentText: d21.onBookmarkPage,
     		morePage: newPath,
     		deleteText: '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M20.5 6h-17"/><path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6"/><path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79c-.865.81-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3"/></g></svg>'
     	};
@@ -517,7 +517,7 @@ $(document).ready(function() {
     					}
     				}
     				ignielbookmark.slice(0, max).forEach((e) => {
-    					bmBuild += '<li data-id="' + e.id + '"><div class="bm-thumb" ' + (bookMarkImage ? '' : 'style="display:none;"') + '><a href="' + e.url + '" title="' + e.title + '"><img alt="' + e.title + '" src="' + e.img + '" title="' + e.title + '"></a></div><div class="bm-title max-line-2" style="max-height:120px;padding-left: ' + (bookMarkImage ? '0' : '2.5rem') + '"><a class="max-line-2 fw-600" href="' + e.url + '" title="' + e.title + '">' + e.title + '</a><p><i class="fa-star"></i> IMDb ' + e.rating + '</br>' + e.category + ', ' + e.country + ', ' + e.quality + ', ' + e.year + '</br><a href="https://www.youtube.com/watch?v=' + e.trailer + '" class="btn btn-default btn-xs fancybox" title="' + e.title + '" target="_blank" rel="nofollow">TRAILER</a></p></div><div class="bm-delete" role="button">' + bookmarks.deleteText + "</div>"
+    					bmBuild += '<li data-id="' + e.id + '"><div class="bm-thumb" ' + (d21.bookMarkImage ? '' : 'style="display:none;"') + '><a href="' + e.url + '" title="' + e.title + '"><img alt="' + e.title + '" src="' + e.img + '" title="' + e.title + '"></a></div><div class="bm-title max-line-2" style="max-height:120px;padding-left: ' + (bookMarkImage ? '0' : '2.5rem') + '"><a class="max-line-2 fw-600" href="' + e.url + '" title="' + e.title + '">' + e.title + '</a><p><i class="fa-star"></i> IMDb ' + e.rating + '</br>' + e.category + ', ' + e.country + ', ' + e.quality + ', ' + e.year + '</br><a href="https://www.youtube.com/watch?v=' + e.trailer + '" class="btn btn-default btn-xs fancybox" title="' + e.title + '" target="_blank" rel="nofollow">TRAILER</a></p></div><div class="bm-delete" role="button">' + bookmarks.deleteText + "</div>"
     				});
     				bmContainer.innerHTML += "</ul>";
     				if (d.location.pathname == bookmarks.morePage) {
@@ -536,7 +536,7 @@ $(document).ready(function() {
     			bmDel()
     		};
     		const bmAdd = (a) => {
-    		    if(ignielbookmark.length > limitBookmark) {
+    		    if(ignielbookmark.length > d21.limitBookmark) {
     		        showToast('Bookmark Limit');
     		        return false;
     		    }else{
