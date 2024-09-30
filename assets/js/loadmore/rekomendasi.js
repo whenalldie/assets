@@ -14,7 +14,7 @@ jQuery(function(e) {
 	    });
 		var t = e(this);
 		e.ajax({
-			url: ADMINURL.ajax_url,
+			url: d21.ajaxUrl,
 			dataType: 'json',
 			data: {
                 action: 'rekomendasi_load_more',
