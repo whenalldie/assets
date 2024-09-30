@@ -17,12 +17,12 @@ html {
 }
 @font-face {
     font-family: dunia21;
-    src: url(../fonts/dunia21.eot);
-    src: url(../fonts/dunia21.eot?#iefix) format("embedded-opentype"),
-        url(../fonts/dunia21.woff2) format("woff2"),
-        url(../fonts/dunia21.woff) format("woff"),
-        url(../fonts/dunia21.ttf) format("truetype"),
-        url(../fonts/dunia21.svg?#dunia21) format("svg");
+    src: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.eot');
+    src: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.eot?#iefix') format("embedded-opentype"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.woff2') format("woff2"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.woff') format("woff"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.ttf') format("truetype"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/slick.svg?#dunia21') format("svg");
     font-weight: 400;
     font-style: normal;
 }
@@ -6216,17 +6216,17 @@ img {
     padding: 0;
 }
 .slick-loading .slick-list {
-    background: url(../images/ajax-loader.gif) center center no-repeat #fff;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/ajax-loader.gif') center center no-repeat #fff;
 }
 @font-face {
     font-family: slick;
     font-weight: 400;
     font-style: normal;
-    src: url(../font/dunia21.eot);
-    src: url(../font/dunia21.eot?#iefix) format("embedded-opentype"),
-        url(../font/dunia21.woff) format("woff"),
-        url(../font/dunia21.ttf) format("truetype"),
-        url(../font/dunia21.svg#slick) format("svg");
+    src: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.eot');
+    src: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.eot?#iefix') format("embedded-opentype"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.woff') format("woff"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.ttf') format("truetype"),
+        url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/fonts/dunia21.svg#slick') format("svg");
 }
 .slick-next,
 .slick-prev {
@@ -6342,17 +6342,17 @@ img {
     border-radius: 0;
 }
 .item-overlay img {
-    background: url(../images/bg-img-dark-default.svg) 50% 50% no-repeat;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/bg-img-dark-default.svg') 50% 50% no-repeat;
 }
 .grid-poster img {
-    background: url(../images/bg-img-light-default.svg) 50% 50% no-repeat;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/bg-img-light-default.svg') 50% 50% no-repeat;
 }
 .navbar {
     border-radius: 0;
 }
 .navbar-brand {
     float: left;
-    background: url(../images/logo-layarkaca21.svg) 0 2px no-repeat;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/logo-layarkaca21.svg') 0 2px no-repeat;
     width: 230px;
     height: 35px;
     background-size: 230px;
@@ -6544,7 +6544,7 @@ img {
     line-height: 35px;
 }
 .mobile-logo {
-    background: url(../images/logo-layarkaca21.svg) 0 11px no-repeat;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/logo-layarkaca21.svg') 0 11px no-repeat;
     width: 190px;
     height: 35px;
     margin-top: 0;
@@ -6740,7 +6740,7 @@ img {
     background: #000;
 }
 .item-overlay .caption {
-    background: url(../images/mask-title.png) center top repeat-x;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/mask-title.png') center top repeat-x;
     bottom: 0;
     left: 0;
     padding: 10px 5px;
@@ -6893,7 +6893,7 @@ img {
     font-weight: 600;
 }
 .mega-item {
-    background: url(../images/bg-tile.gif);
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/bg-tile.gif');
     border: 1px solid #ccc;
     margin-bottom: 15px;
 }
@@ -7386,7 +7386,7 @@ img {
     padding: 2em;
 }
 .warning-header a {
-    background: url(../images/logo-layarkaca21.svg) no-repeat;
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/logo-layarkaca21.svg') no-repeat;
     width: 250px;
     height: 35px;
     background-size: 250px;
@@ -7604,7 +7604,7 @@ img {
     header .navbar-brand {
         width: 55px;
         height: 50px;
-        background: url(../images/logo-small.svg) no-repeat;
+        background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/logo-small.svg') no-repeat;
         position: absolute;
         top: 3px;
         display: block;
@@ -7745,7 +7745,7 @@ img {
         font-size: 50%;
     }
     .mobile-logo {
-        background: url(../images/logo-layarkaca21.svg) 0 13px no-repeat;
+        background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/logo-layarkaca21.svg') 0 13px no-repeat;
         width: 170px;
         height: 35px;
         background-size: 170px;
@@ -7829,7 +7829,7 @@ img {
 .fancybox-close,
 .fancybox-next span,
 .fancybox-prev span {
-    background-image: url(../images/fancybox/fancybox_sprite.png);
+    background-image: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/fancybox/fancybox_sprite.png');
 }
 #fancybox-loading {
     position: fixed;
@@ -7852,7 +7852,7 @@ img {
 #fancybox-loading div {
     width: 44px;
     height: 44px;
-    background: url(../images/fancybox/fancybox_loading.gif) center center
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/fancybox/fancybox_loading.gif') center center
         no-repeat;
 }
 .fancybox-close {
@@ -7866,7 +7866,7 @@ img {
     width: 40%;
     height: 100%;
     text-decoration: none;
-    background: url(../images/fancybox/blank.gif);
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/fancybox/blank.gif');
 }
 .fancybox-prev {
     left: 0;
@@ -7917,7 +7917,7 @@ img {
     overflow: hidden;
     display: none;
     z-index: 8010;
-    background: url(../images/fancybox/fancybox_overlay.png);
+    background: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/fancybox/fancybox_overlay.png');
 }
 .fancybox-overlay-fixed {
     position: fixed;
@@ -7985,11 +7985,11 @@ img {
     .fancybox-close,
     .fancybox-next span,
     .fancybox-prev span {
-        background-image: url(../images/fancybox/fancybox_sprite@2x.png);
+        background-image: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/fancybox/fancybox_sprite@2x.png');
         background-size: 44px 152px;
     }
     #fancybox-loading div {
-        background-image: url(../images/fancybox/fancybox_loading@2x.gif);
+        background-image: url('https://cdn.statically.io/gh/whenalldie/d21/main/assets/images/fancybox/fancybox_loading@2x.gif');
         background-size: 24px 24px;
     }
 }
