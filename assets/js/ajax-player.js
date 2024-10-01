@@ -7,7 +7,7 @@ function dunia21_loadTabContent(tab_name, post_id) {
 			if ( ! isLoaded ) {
 				if ( ! container.classList.contains( 'dunia21-player-loading' ) ) {
 				    document.getElementById("loadMsg").style.display = 'block';
-					document.getElementById("loadMsg").innerHTML = '<img src="https://cdn.jsdelivr.net/gh/whenalldie/d21@main/assets/images/ajax-loader-bar-red.gif"><p>Loading player... Please wait!</p>';
+					document.getElementById("loadMsg").innerHTML = '<img src="'+theme.Dir+'"><p>Loading player... Please wait!</p>';
 					var xhttp = new XMLHttpRequest();
 
 					xhttp.onreadystatechange = function() {
@@ -18,7 +18,7 @@ function dunia21_loadTabContent(tab_name, post_id) {
 						}
 					};
 					
-					xhttp.open( 'POST', d21.ajaxUrl, true );
+					xhttp.open( 'POST', mvpp.ajax_url, true );
 					xhttp.setRequestHeader( "Content-type", "application/x-www-form-urlencoded; charset=UTF-8" );
 					xhttp.send( 'action=dunia21_player_content&tab=' + tab_name + '&post_id=' + post_id );
 				}
