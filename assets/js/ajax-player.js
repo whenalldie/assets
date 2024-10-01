@@ -20,7 +20,7 @@ function dunia21_loadTabContent(tab_name, post_id) {
 						}
 					};
 					
-					xhttp.open( 'POST', d21.ajaxurl, true );
+					xhttp.open( 'POST', d21.ajaxUrl, true );
 					xhttp.setRequestHeader( "Content-type", "application/x-www-form-urlencoded; charset=UTF-8" );
 					xhttp.send( 'action=dunia21_player_content&tab=' + tab_name + '&post_id=' + post_id );
 				}
