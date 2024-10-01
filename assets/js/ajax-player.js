@@ -3,11 +3,10 @@ function dunia21_loadTabContent(tab_name, post_id) {
 	if (document.getElementById("loadMsg"), container) {
 		var tabc = container.querySelector("#" + tab_name);
 		if( tabc ) {
-			/* only load content if it wasn't already loaded. */
 			var isLoaded = tabc.getAttribute( 'data-loaded' );
 			if ( ! isLoaded ) {
 				if ( ! container.classList.contains( 'dunia21-player-loading' ) ) {
-				  document.getElementById("loadMsg").style.display = 'block';
+				    document.getElementById("loadMsg").style.display = 'block';
 					document.getElementById("loadMsg").innerHTML = '<img src="'+d21.themeDir+'/assets/images/ajax-loader-bar-red.gif"><p>Loading player... Please wait!</p>';
 					var xhttp = new XMLHttpRequest();
 
@@ -15,7 +14,6 @@ function dunia21_loadTabContent(tab_name, post_id) {
 						if ( this.readyState == 4 && this.status == 200 ) {
 							tabc.innerHTML = this.responseText;
 							container.classList.remove( 'dunia21-player-loading' );
-							document.getElementById("loadMsg").style.display = 'none';
 							tabc.setAttribute( 'data-loaded', '1' );
 						}
 					};
@@ -74,10 +72,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		for (i = 0; i < btn.length; i++) {
 			btn[i].addEventListener("click", clicktab);
 		}
-		var firstbtn    = document.querySelector( '#player1' );
-		var secondbtn   = document.querySelector( '#player2' );
-		var thirdbtn    = document.querySelector( '#player3' );
-		var fourthbtn   = document.querySelector( '#player16' );
+		var firstbtn = document.querySelector( '#player1' );
+		var secondbtn = document.querySelector( '#player2' );
+		var thirdbtn = document.querySelector( '#player3' );
+		var fourthbtn = document.querySelector( '#player16' );
 		if(firstbtn === null || firstbtn === undefined) {
 		    if(secondbtn) {
 		    secondbtn.click();
