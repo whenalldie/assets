@@ -74,14 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		for (i = 0; i < btn.length; i++) {
 			btn[i].addEventListener("click", clicktab);
 		}
-    var firstPlayer = d21.firstPlayer;
-    if(firstPlayer === null || firstbtn === undefined) {
-      var playerStart = '#player1';
-    } else {
-      var playerStart = '#player'+firstPlayer;
-    }
-    
-		var firstbtn    = document.querySelector( playerStart );
+		var firstbtn    = document.querySelector( '#player1' );
 		var secondbtn   = document.querySelector( '#player2' );
 		var thirdbtn    = document.querySelector( '#player3' );
 		var fourthbtn   = document.querySelector( '#player16' );
