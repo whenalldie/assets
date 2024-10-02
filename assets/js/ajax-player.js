@@ -7,7 +7,7 @@ function dunia21_loadTabContent(tab_name, post_id) {
 			if ( ! isLoaded ) {
 				if ( ! container.classList.contains( 'dunia21-player-loading' ) ) {
 				    document.getElementById("loadMsg").style.display = 'block';
-					document.getElementById("loadMsg").innerHTML = '<img src="../images/ajax-loader-bar-red.gif"><p>Loading player... Please wait!</p>';
+					document.getElementById("loadMsg").innerHTML = '<img src="https://cdn.jsdelivr.net/gh/whenalldie/d21@main/assets/images/ajax-loader-bar-red.gif"><p>Loading player... Please wait!</p>';
 					var xhttp = new XMLHttpRequest();
 
 					xhttp.onreadystatechange = function() {
